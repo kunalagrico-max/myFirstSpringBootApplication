@@ -20,9 +20,11 @@ public class MyFirstController {
 
     @GetMapping("/hello/{name}")
    public String printHelloWorld(@PathVariable("name") String name) {
-    {
-     return myFirstService.sayHelloTo(name);
+        return myFirstService.sayHelloTo(name);
     }
 
-
-}}
+    @GetMapping("/goodBye/{name}")
+    public String goodBye(@PathVariable("name") String name) {
+        return "bye " + name;
+    }
+}
