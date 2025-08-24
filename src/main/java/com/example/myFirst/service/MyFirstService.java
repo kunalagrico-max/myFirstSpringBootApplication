@@ -9,5 +9,7 @@ public class MyFirstService {
         return "Hello " + name;
     }
 
-//
+    public String goodBye(String name) {
+        return "good bye " + name;
+    }
 }
