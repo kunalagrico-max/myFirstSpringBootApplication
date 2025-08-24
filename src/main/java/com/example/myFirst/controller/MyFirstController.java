@@ -25,6 +25,6 @@ public class MyFirstController {
 
     @GetMapping("/goodBye/{name}")
     public String goodBye(@PathVariable("name") String name) {
-        return "bye " + name;
+        return myFirstService.goodBye(name);
     }
 }
